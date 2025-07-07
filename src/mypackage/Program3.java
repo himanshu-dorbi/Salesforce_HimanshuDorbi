@@ -65,10 +65,6 @@ public class Program3 {
 		Network n4 = new Net3g();
 		n4.connect();
 		n4.disconnect();
-		
-		
-		
-
 	}
 
 }

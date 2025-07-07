@@ -16,6 +16,10 @@ class PrimeUser extends user {
     void showPlan() {
         System.out.println("prime user plan activated. access to all prime content!!");
     }
+    
+    void test(){
+    	System.out.println("testing!!");
+    }
 }
 
 public class PolymorphismExample {
@@ -33,6 +37,7 @@ public class PolymorphismExample {
 	 user person2 = new PrimeUser();
 	 person2.showPlan("Prime");
 	 person2.showPlan();
+	 ((PrimeUser)person2).test();
 	 
  }
  
