@@ -1,15 +1,15 @@
 package day10;
 import java.io.*;
 
-class myException extends Exception{
-	myException(String s) {
-		super(s);
-	}
-}
+//class myException extends Exception{
+//	myException(String s) {
+//		super(s);
+//	}
+//}
 
 public class CustomException {
 	
-	public static void check(int a) throws myException {
+	public static void check(int a) throws ArithmeticException {
 		
 			int x = a/0;
 	}

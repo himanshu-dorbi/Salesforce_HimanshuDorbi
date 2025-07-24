@@ -6,8 +6,9 @@ public class Plan {
   private String planType;
   private float speed;
   private float limit;
+  private int cost;
   
-  public Plan(String planid, String planType, float speed, float limit) throws  PlanNotFound {
+  public Plan(String planid, String planType, float speed, float limit, int cost) throws  PlanNotFound {
 	  if(planid.trim().isEmpty()) {
 		  throw new  PlanNotFound("plan id cant be null");
 	  }
@@ -19,6 +20,7 @@ public class Plan {
 	  this.planType= planType;
 	  this.speed = speed;
 	  this.limit = limit;
+	  this.cost = cost;
   }
   
   public void showPlan() {
